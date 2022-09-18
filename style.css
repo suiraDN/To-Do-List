@@ -5,14 +5,15 @@
 }
 
 body {
-	background-image: linear-gradient(90deg, #fb7ba2, #fce043);
-	color: white;
+	background-image: linear-gradient(120deg, #fb7ba2, #fce043);
+	color: #ffffff;
 	font-family: "Sen", sans-serif;
 	min-height: 100vh;
 }
 
 header {
 	font-size: 1.5rem;
+	text-shadow: -10px -5px 7px rgba(99, 43, 26, 0.76);
 }
 
 header,
@@ -28,7 +29,12 @@ form button {
 	padding: 0.5rem;
 	font-size: 2rem;
 	border: none;
-	background: white;
+	background: #ffffff;
+}
+
+form input {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 form button {
@@ -36,6 +42,8 @@ form button {
 	background: white;
 	cursor: pointer;
 	transition: all 0.3s ease;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 form button:hover {
@@ -58,11 +66,13 @@ form button:hover {
 	margin: 0.5rem;
 	background: white;
 	color: black;
-	font-size: 1.5rem;
+	font-size: 1rem;
+	text-transform: uppercase;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	transition: all 0.5s ease;
+	border-radius: 10px;
 }
 
 .todo li {
@@ -71,20 +81,32 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-	background: #e01623;
+	background: #dd323e;
 	color: white;
 	border: none;
-	padding: 1rem;
+	padding: 0.6rem;
+	margin: 5px;
 	cursor: pointer;
-	font-size: 1rem;
+	font-size: 0.8rem;
+	border-radius: 10px;
 }
 
 .complete-btn {
-	background: #04a30c;
+	background: #54a304;
+}
+
+.trash-btn:hover {
+	background: #ff2332;
+	transition: all 0.3s ease;
+}
+.complete-btn:hover {
+	background: #06d610;
+	transition: all 0.3s ease;
 }
 
 .todo-item {
 	padding: 0rem 0.5rem;
+	text-align: center;
 }
 
 .fa-trash,
@@ -112,10 +134,11 @@ select {
 	margin: 1rem;
 	position: relative;
 	overflow: hidden;
+	border-radius: 10px;
 }
 
 select {
-	color: #fb7ba2;
+	color: #9a0055;
 	width: 10rem;
 	cursor: pointer;
 	padding: 1rem;

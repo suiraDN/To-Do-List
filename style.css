@@ -145,7 +145,7 @@ select {
 	max-width: 7rem;
 }
 
-.select::after {
+/* .select::after {
 	appearance: none;
 	content: "\25BC";
 	position: absolute;
@@ -156,7 +156,7 @@ select {
 	padding: 1rem;
 	pointer-events: none;
 	transition: all 0.5s ease;
-}
+} */
 
 .select:hover::after {
 	background: #fb7ba2;
